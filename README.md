@@ -74,49 +74,56 @@ Evaluated models using:
 - F1 Score
 - Confusion Matrix
 
-## 📊 Final Model Performance
-
-| Model | Accuracy | Precision | Recall | F1 Score |
-|---------|---------|---------|---------|---------|
-| Logistic Regression | 80.33% | 79.49% | 88.57% | 83.78% |
-| Random Forest | 78.69% | 82.35% | 80.00% | 81.16% |
-| KNN | 73.77% | 77.14% | 77.14% | 77.14% |
-
-## 🏆 Best Model
-
-### Logistic Regression
-
-Selected because it achieved:
-
-- Highest Accuracy
-- Highest Recall
-- Highest F1 Score
-
-The model correctly identified 31 out of 35 heart disease patients while missing only 4 cases.
-
-## 💡 Key Insights
-
-1. Logistic Regression achieved the best overall performance after hyperparameter tuning.
-2. Recall proved to be the most important metric for healthcare applications.
-3. Cross-validation improved model reliability and reduced overfitting risk.
-4. Hyperparameter tuning significantly improved Logistic Regression performance.
-5. Machine Learning can assist in early heart disease detection and clinical decision-making.
 
 
-## 🚀 Project Outcome
+| Model               |   Accuracy |  Precision |     Recall |   F1 Score |
+| ------------------- | ---------: | ---------: | ---------: | ---------: |
+| Logistic Regression |     80.33% |     75.61% | **93.94%** |     83.78% |
+| KNN                 |     80.33% |     76.92% |     90.91% |     83.33% |
+| **Random Forest**   | **83.61%** | **81.08%** |     90.91% | **85.71%** |
 
-This project demonstrates:
 
-✔ Data Preprocessing
+🏆 **Best Model: Random Forest**
+Why Random Forest?
+Highest Accuracy (83.61%)
+Highest Precision (81.08%)
+Highest F1 Score (85.71%)
+Strong Recall (90.91%)
+
+Although Logistic Regression has a slightly higher Recall (93.94%), Random Forest provides the best overall balance across all evaluation metrics.
+
+💡 Key Insights
+1. Random Forest emerged as the best-performing model, achieving the highest Accuracy (83.61%), Precision (81.08%), and F1 Score (85.71%).
+2. Logistic Regression achieved the highest Recall (93.94%), making it highly effective at identifying patients with heart disease.
+3. Cross-validation and hyperparameter tuning improved model reliability, helping to select the most robust algorithm.
+4. Random Forest provided the best balance between Precision and Recall, resulting in superior overall performance.
+5. Machine Learning can effectively support early heart disease detection by analyzing patient health indicators and predicting disease risk.
+
+
+🚀 Project Outcome
+
+This project successfully demonstrated:
+
+✔ Data Cleaning & Preprocessing
+
+✔ Exploratory Data Analysis
 
 ✔ Feature Engineering
 
-✔ Model Building
+✔ Feature Scaling
 
-✔ Cross Validation
+✔ Train-Test Splitting
 
-✔ Hyperparameter Tuning
+✔ Cross Validation (K-Fold)
 
-✔ Model Evaluation
+✔ Hyperparameter Tuning (GridSearchCV)
 
-✔ Healthcare Data Analytics
+✔ Model Building & Comparison
+
+✔ Model Evaluation using Accuracy, Precision, Recall & F1 Score
+
+✔ Confusion Matrix Analysis
+
+✔ Healthcare Data Analytics & Predictive Modeling
+
+✔ Selection of the Best Performing Model (Random Forest)
